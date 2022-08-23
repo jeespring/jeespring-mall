@@ -12,7 +12,7 @@
     <description>jeespring mall</description>
 
     <modules>
-        
+        <module>jeespring-common</module>
     </modules>
 
     <properties>
