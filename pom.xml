@@ -15,6 +15,7 @@
         <module>jeespring-common</module>
         <module>jeespring-gateway</module>
         <module>jeespring-admin</module>
+        <module>jeespring-user</module>
     </modules>
 
     <properties>
