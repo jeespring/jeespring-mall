@@ -16,6 +16,7 @@
         <module>jeespring-gateway</module>
         <module>jeespring-admin</module>
         <module>jeespring-user</module>
+        <module>jeespring-order</module>
     </modules>
 
     <properties>

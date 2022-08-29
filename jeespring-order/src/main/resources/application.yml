@@ -1,0 +1,43 @@
+server:
+  port: 10006
+
+spring:
+  application:
+    name: jeespring-order
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        # Nacos 服务发现与注册配置
+        server-addr: 127.0.0.1:8848
+        # 注册到 nacos 的指定 namespace，默认为 public
+        namespace: public
+        metadata:
+          management:
+            context-path: /actuator
+          user.name: nacos
+          user.password: nacos
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jeespring-mall?characterEncoding=utf-8
+    username: root
+    password: root
+mybatis-plus:
+  global-config:
+    banner: false
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
+    map-underscore-to-camel-case: true # 开启驼峰
+  type-aliases-package: com.jeespring.order.entity  #定义所有操作类的别名所在包
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'  # 需要开放的端点。默认值只打开 health 和 info 两个端点。通过设置 *, 可以开放所有端点
+  endpoint:
+    health:
+      show-details: always
