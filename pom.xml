@@ -18,6 +18,7 @@
         <module>jeespring-user</module>
         <module>jeespring-order</module>
         <module>jeespring-cart</module>
+        <module>jeespring-search</module>
     </modules>
 
     <properties>
