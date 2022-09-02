@@ -17,6 +17,7 @@
         <module>jeespring-admin</module>
         <module>jeespring-user</module>
         <module>jeespring-order</module>
+        <module>jeespring-product</module>
         <module>jeespring-cart</module>
         <module>jeespring-search</module>
     </modules>
