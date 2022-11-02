@@ -47,6 +47,9 @@
         <lombok.version>1.18.20</lombok.version>
         <persistence.version>1.0.2</persistence.version>
         <apache.common.version>3.12.0</apache.common.version>
+        <commons.codec.version>1.15</commons.codec.version>
+        <joda.time.version>2.9.9</joda.time.version>
+
         <knife4j.boot.version>3.0.3</knife4j.boot.version>
 
     </properties>
@@ -116,6 +119,18 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${apache.common.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons.codec.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda.time.version}</version>
             </dependency>
 
             <dependency>
