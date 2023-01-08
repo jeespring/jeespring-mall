@@ -10,7 +10,6 @@
 
     <groupId>com.jeespring</groupId>
     <artifactId>jeespring-admin</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
     <name>jeespring-admin</name>
 
     <description>jeespring mall admin</description>
@@ -19,7 +18,7 @@
         <dependency>
             <groupId>com.jeespring.mall</groupId>
             <artifactId>jeespring-common</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${parent.version}</version>
         </dependency>
 
         <dependency>
